@@ -11,6 +11,10 @@ type animal struct {
 	Species        string // Public
 }
 
+func New() animal {
+	return animal{Name: "peter", ScientificName: "cannis", Species: "dog"}
+}
+
 func main() {
 	var a = animal{ScientificName: "", Species: "dog"}
 	fmt.Println(a)

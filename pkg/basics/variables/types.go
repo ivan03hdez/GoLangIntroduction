@@ -10,6 +10,8 @@ var complexNumber128 complex128
 var boolean bool
 var cadena string
 
+var err error
+
 var mapOfStrings map[string]string
 var mapOfAnything map[interface{}]interface{}
 
