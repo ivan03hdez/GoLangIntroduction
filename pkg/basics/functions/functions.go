@@ -1,7 +1,13 @@
 package functions
 
-func newFunction(parameter string) (string, error){
-	if stringUtils.isBlank
+import "fmt"
+
+func newFunction(parameter string) (string, error) {
+	if parameter == "" {
+		return "", fmt.Errorf("parameter cannot be blank")
+	}
+
+	return parameter, nil
 }
 
-var func function
+var Fn = newFunction
