@@ -1,7 +1,5 @@
 package private
 
-import "fmt"
-
 // Public: every package can access to those properties
 // Private: only code placed at the same package can access to private properties
 
@@ -11,11 +9,6 @@ type animal struct {
 	Species        string // Public
 }
 
-func New() animal {
+func NewAnimal() animal {
 	return animal{Name: "peter", ScientificName: "cannis", Species: "dog"}
-}
-
-func main() {
-	var a = animal{ScientificName: "", Species: "dog"}
-	fmt.Println(a)
 }

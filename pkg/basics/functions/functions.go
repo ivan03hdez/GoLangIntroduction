@@ -2,7 +2,7 @@ package functions
 
 import "fmt"
 
-func newFunction(parameter string) (string, error) {
+func newFunctionWithError(parameter string) (string, error) {
 	if parameter == "" {
 		return "", fmt.Errorf("parameter cannot be blank")
 	}
@@ -10,4 +10,4 @@ func newFunction(parameter string) (string, error) {
 	return parameter, nil
 }
 
-var Fn = newFunction
+var Fn = newFunctionWithError

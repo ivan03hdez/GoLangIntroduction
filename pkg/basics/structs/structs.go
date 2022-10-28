@@ -9,7 +9,7 @@ type Car struct {
 }
 
 type Ford struct {
-	Car        // creates a property car that has a car Object
+	Car        // creates a property Car that has a car Object
 	FordNumber int
 }
 

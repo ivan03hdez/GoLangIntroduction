@@ -8,14 +8,29 @@ import (
 
 func main() {
 	fmt.Println("Hello, world.")
-
-	// Uncomment for testing it
 	// string_example.RunExample()
+	// variables.PrintNumber()
+	///////////////ACCESSIBILITY/////////////////////
+	//var persona = public.Person{
+	//Name: "IVAN",
+	//LastName: "HERNANDEZ",
+	//property age is not accessible from outer packages
+	//}
+	//fmt.Println("persona:", persona)
+	//	var animal = private.NewAnimal()
+	//	var animal = private.NewAnimal()
+	//fmt.Println("animal:", animal)
+	/////////////////////////////////////////////////
 	// structs.CreateNewFord()
-	// functions.Fn()
+	// functions.Fn("")
+	// conditionals.SwitchShowCase()
+	// conditionals.IfShowcase()
 	// loops.SimpleLoop()
 	// loops.InfiniteLoop()
 	// loops.LoopThroughSliceAndStructs()
 	// loops.LoopThroughMap()
-	goroutines.GoroutineWithBufferedChannel()
+	// goroutines.SimpleGoroutine()
+	// goroutines.SimpleGoroutineWithChannel()
+	// goroutines.GoroutineWithBufferedChannel()
+	goroutines.GoroutineWithBufferedChannelAndWaitingGroup()
 }
