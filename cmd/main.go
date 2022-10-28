@@ -23,6 +23,8 @@ func main() {
 	/////////////////////////////////////////////////
 	// structs.CreateNewFord()
 	// functions.Fn("")
+	// x := 6
+	// pointers.PointerFunc(&x)
 	// conditionals.SwitchShowCase()
 	// conditionals.IfShowcase()
 	// loops.SimpleLoop()
