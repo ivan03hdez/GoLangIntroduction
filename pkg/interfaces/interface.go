@@ -48,3 +48,7 @@ func RunExample() {
 	displayValue(20)
 	displayValue(false)
 }
+
+func RunExampleTesting(u persona) (bool, error) {
+	return u.IsMinor()
+}
