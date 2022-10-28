@@ -55,7 +55,7 @@ func GoroutineWithBufferedChannelAndWaitingGroup() {
 	numberOfGoRoutines := 10
 	for i := 0; i < numberOfGoRoutines; i++ {
 		wg.Add(1)
-		ch <- struct{} // If there are no more messages in the channel, it will block the thread until they fit.
+		ch <- 1 // If there are no more messages in the channel, it will block the thread until they fit.
 		go func(x int) {
 			defer wg.Done()
 			<-ch
