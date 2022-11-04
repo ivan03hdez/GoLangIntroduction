@@ -3,9 +3,9 @@ package structs
 import "fmt"
 
 type Car struct {
-	Doors  int
-	Weight int
-	Horses int
+	Doors  int `json:"car_doors"`
+	Weight int `json:"car_weight"`
+	Horses int `json:"car_horses"`
 }
 
 type Ford struct {
